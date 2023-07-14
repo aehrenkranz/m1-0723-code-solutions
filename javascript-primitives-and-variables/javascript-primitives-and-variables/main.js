@@ -1,0 +1,15 @@
+const fullName = 'Alex Ehrenkranz';
+const isCool = true;
+const totalPets = 1;
+console.log('My name is', fullName);
+console.log('Am I cool?', isCool);
+console.log('I have', totalPets, 'pet(s)');
+console.log('the variable fullName is a', typeof fullName);
+console.log('the variable isCool is a', typeof isCool);
+console.log('the variable totalPets is a', typeof totalPets);
+const unknown = null;
+console.log('the value of the variable uknown is', unknown);
+console.log('the variable uknown is an', typeof unknown);
+let never;
+console.log('the value of the variable never is', never);
+console.log('the variable never is', typeof never);
