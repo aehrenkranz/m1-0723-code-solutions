@@ -14,6 +14,8 @@ h2 {
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  max-width: 600px;
+  margin: auto;
 }
 
 input,
@@ -24,8 +26,9 @@ select {
   margin: 4px 4px 1em;
   /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
   font-family: 'Brandon Grotesque';
-  border-radius: 8px;
+  border-radius: 7px;
   border: 1px solid gray;
+  padding-left: 10px;
 }
 
 .label {
@@ -35,4 +38,18 @@ select {
 
 select {
   background-color: rgb(249, 236, 236);
+}
+
+button {
+  align-self: flex-end;
+  border-radius: 40px;
+  background-color: rgb(228, 74, 74);
+  font-size: large;
+  color: white;
+  /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+  font-family: 'Brandon Grotesque';
+  width: 7em;
+  height: 2.6em;
+  border: 0 solid;
+  font-weight: normal;
 }
