@@ -1,0 +1,246 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+
+.logo {
+  height: 70px;
+  width: 170px;
+}
+
+.row-header {
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: 2px solid;
+  border-color: rgb(228, 220, 220);
+}
+
+.column-left-side {
+  flex-basis: 50%;
+  padding-left: 122px;
+}
+
+.column-right-side {
+  align-self: center;
+  flex-basis: 50%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 50px;
+  padding-right: 122px;
+}
+
+.header-button {
+  border: none;
+  margin: none;
+  background-color: white;
+  color: gray;
+  font-size: larger;
+}
+
+.contact-us {
+  background-color: rgb(44, 45, 90);
+  color: white;
+  font-family: Avenir;
+  border: 0;
+  margin: 0%;
+  height: 47px;
+  width: 117px;
+  border-radius: 6%;
+  font-size: 110%;
+  font-weight: 500;
+}
+
+.get-started {
+  background-color: rgb(44, 45, 90);
+  color: white;
+  font-family: Avenir;
+  border: 0;
+  margin-top: 30px;
+  height: 65px;
+  width: 230px;
+  border-radius: 5px;
+  font-size: 140%;
+  font-weight: 500;
+}
+
+.img-container {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  display: flex;
+  position: relative;
+}
+
+.image-text {
+  max-width: 800px;
+  position: absolute;
+  padding-left: 80px;
+  padding-top: 110px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.filter {
+  background-color: black;
+  position: absolute;
+  opacity: 25%;
+  width: 100%;
+  height: 100%;
+}
+
+.mid {
+  opacity: 80%;
+  width: 100%;
+}
+
+.image-text > h1 {
+  font-size: 3.6em;
+  color: white;
+  font-family: 'Tiempos Headline';
+  font-weight: 500;
+}
+
+.image-text > p {
+  color: rgb(247, 247, 247);
+  font-family: Avenir;
+  font-size: larger;
+  line-height: 1.8em;
+}
+
+.row-container-1 {
+  background-color: rgba(246, 244, 244, 0.542);
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0;
+  border: 0;
+}
+
+.row-container-2 {
+  background-color: rgba(246, 244, 244, 0.542);
+  width: 100%;
+  display: flex;
+  padding-top: 50px;
+  margin: 0;
+  border: 0;
+}
+
+.row-container-3 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 100%;
+  display: flex;
+  padding-left: 122px;
+  padding-right: 122px;
+}
+
+.row-container-4 {
+  width: 100%;
+  background-color: gray;
+  padding-top: 200px;
+  padding-left: 122px;
+  padding-right: 122px;
+  padding-bottom: 122px;
+  display: flex;
+}
+
+.row-container-5 {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  padding-left: 122px;
+}
+
+.row-container-1 > h2 {
+  font-size: 2.5em;
+  color: rgb(103, 103, 103);
+  font-family: 'Tiempos Headline';
+  font-weight: 500;
+}
+
+.row-container-1 > p {
+  font-family: Avenir;
+  font-size: larger;
+  line-height: 1.8em;
+  color: rgb(103, 103, 103);
+  margin: 0;
+}
+
+.row-container-2 > .column-half {
+  flex-basis: 50%;
+  text-align: center;
+  font-family: Avenir;
+  font-size: 1.5em;
+  line-height: 3em;
+  color: rgb(103, 103, 103);
+  margin: 0;
+}
+
+.row-container-3 > .column-half {
+  flex-basis: 50%;
+}
+
+.row-container-3 > .column-half > h2 {
+  font-size: 2.5em;
+  color: rgb(103, 103, 103);
+  font-family: 'Tiempos Headline';
+  font-weight: 500;
+  text-align: left;
+}
+
+.row-container-3 > .column-half > p {
+  font-family: Avenir;
+  font-size: larger;
+  line-height: 1.8em;
+  color: rgb(103, 103, 103);
+  margin: 0;
+}
+
+.row-container-3 > .column-half > .button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.row-container-4 > .column-half > p {
+  padding-top: 40px;
+  font-family: Avenir;
+  font-size: larger;
+  line-height: 1.8em;
+  color: white;
+}
+
+.row-container-4 > .column-half {
+  flex-basis: 50%;
+}
+
+.row-container-4 > .column-half-flex {
+  flex-basis: 50%;
+  display: flex;
+}
+
+.row-container-4 > .column-half-flex > .sub-column-half > h3 {
+  padding-bottom: 20px;
+  margin: 0;
+  font-family: Avenir;
+  font-size: 1.5em;
+  line-height: 1.8em;
+  color: white;
+  font-weight: 400;
+}
+
+.row-container-4 > .column-half-flex > .sub-column-half {
+  flex-basis: 50%;
+}
+
+/* stylelint-disable-next-line no-descending-specificity */
+.row-container-5 > h3 {
+  font-weight: 500;
+  font-family: Avenir;
+  font-size: larger;
+  line-height: 1.8em;
+  color: rgb(103, 103, 103);
+  margin: 0;
+  padding-right: 50px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
