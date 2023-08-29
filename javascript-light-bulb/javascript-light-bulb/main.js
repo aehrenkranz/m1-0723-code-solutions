@@ -1,16 +1,16 @@
 const button = document.querySelector('button');
-const html = document.querySelector('html');
+const body = document.querySelector('body');
 
 function handleButton(event) {
   if (button.className === 'button-on') {
     button.className = 'button-off';
-    html.className = 'off';
+    body.className = 'off';
     return;
   }
 
   if (button.className === 'button-off') {
     button.className = 'button-on';
-    html.className = 'on';
+    body.className = 'on';
   }
 }
 
