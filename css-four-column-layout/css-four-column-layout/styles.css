@@ -1,0 +1,44 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+html {
+  background-color: #f7f8fa;
+  font-family: Barlow;
+}
+
+.container {
+  margin: auto;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: xx-large;
+  text-align: center;
+}
+
+h3,
+p {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.column-one-fourth {
+  flex-basis: 25%;
+}
+
+.img-container-icon {
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+}
+
+.icon {
+  width: 20%;
+}
