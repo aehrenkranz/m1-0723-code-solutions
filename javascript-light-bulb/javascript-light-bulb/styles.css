@@ -1,0 +1,36 @@
+body {
+  background-color: rgb(230, 230, 190);
+}
+
+.on {
+  background-color: rgb(230, 230, 190);
+}
+
+.off {
+  background-color: rgb(15, 15, 15);
+}
+
+.container {
+  height: 900px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.button-on {
+  background-color: rgb(234, 234, 72);
+  border: 0;
+  box-shadow: 0 0 50px yellow;
+}
+
+.button-off {
+  background-color: rgb(0, 0, 0);
+  border: 0;
+  box-shadow: 0 0 50px black;
+}
