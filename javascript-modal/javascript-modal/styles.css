@@ -1,0 +1,59 @@
+.window {
+  letter-spacing: normal;
+  width: 500px;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  text-align: center;
+  margin: 80px 0;
+  font-size: 1.8em;
+}
+
+.modal-close {
+  width: 90px;
+  font-size: 1.8em;
+  background-color: rgb(242, 71, 71);
+  border: none;
+  border-radius: 3px;
+  color: white;
+  box-shadow: 0.5px 0 5px black;
+}
+
+.modal-container {
+  display: none;
+}
+
+.modal-container.on {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: calc(100% / 1);
+  background-color: gray;
+  background-color: rgba(11, 11, 11, 0.734);
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.modal-activate {
+  width: 200px;
+  height: 50px;
+  letter-spacing: 1px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  font-size: larger;
+  background-color: pink;
+  border: none;
+  box-shadow: 0.5px 0 5px;
+}
