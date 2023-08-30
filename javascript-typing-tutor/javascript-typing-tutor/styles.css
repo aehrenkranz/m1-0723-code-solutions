@@ -1,0 +1,38 @@
+div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  padding: 33px;
+  margin: 0;
+  font-family: monospace;
+}
+
+span {
+  font-size: 3em;
+  display: inline-block;
+  border-bottom: 7px solid white;
+  white-space: pre;
+}
+
+.u {
+  border-bottom: 7px solid black;
+  display: inline-block;
+}
+
+.g {
+  color: greenyellow;
+}
+
+.r {
+  color: red;
+  border-bottom: 7px solid red;
+  display: inline-block;
+}
