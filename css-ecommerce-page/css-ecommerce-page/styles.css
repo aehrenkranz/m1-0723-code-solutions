@@ -1,0 +1,46 @@
+/* stylelint-disable font-family-no-missing-generic-family-keyword */
+body {
+  font-family: 'DM Sans';
+}
+
+h2 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.row {
+  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+}
+
+.column-one-fifth {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 20%;
+}
+
+.img-container {
+  max-height: 450px;
+}
+
+img {
+  height: 450px;
+  width: 100%;
+}
+
+span,
+del {
+  color: lightgray;
+}
+
+.highlight {
+  color: black;
+  background-color: rgb(193, 245, 193);
+}
