@@ -229,10 +229,12 @@ const players = [
     hand: [],
   },
 ];
+let max = players[0];
 function deal(players, cardsDealt) {
   let count = 0;
   const newDeck = _.shuffle(deck);
   for (let i = 0; i < players.length; i++) {
+    players[i].hand = [];
     for (let x = 0; x < cardsDealt; x++) {
       players[i].hand.push(newDeck[count]);
       count++;
@@ -243,13 +245,9 @@ function deal(players, cardsDealt) {
   }
 }
 
-// eslint-disable-next-line no-unused-vars
-function letsPlay(players, cardsDealt) {
-  deal(players, cardsDealt);
-  let winner;
+function engine(players) {
   for (let i = 0; i < players.length; i++) {
     players[i].total = 0;
-    let max = players[0].total;
     for (let x = 0; x < players[i].hand.length; x++) {
       switch (players[i].hand[x].rank) {
         case 'Ace':
@@ -265,12 +263,29 @@ function letsPlay(players, cardsDealt) {
       }
       players[i].total += players[i].hand[x];
     }
-    if (players[i].total > max) {
-      max = players[i].total;
-      winner = players[i].name;
+  }
+  for (let i = 0; i < players.length; i++) {
+    if (players[i].total > max.total) {
+      max = players[i];
     }
   }
-  console.log(`And the winner is: ${winner}!`);
+  return max;
 }
 
-letsPlay(players, 2);
+// eslint-disable-next-line no-unused-vars
+function letsPlay(players, cardsDealt) {
+  deal(players, cardsDealt);
+  engine(players);
+
+  let result = players.filter(checkTie);
+  function checkTie(winner) {
+    return winner.total === max.total;
+  }
+
+  while (result.length > 1) {
+    deal(result, cardsDealt);
+    engine(result);
+    result = result.filter(checkTie);
+  }
+  console.log(`And the winner is: ${max.name}!`);
+}
